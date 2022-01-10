@@ -1,5 +1,6 @@
 {
   "name": "vite-preset",
+  "author": "Fabian Köppling",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -7,6 +8,10 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "postcss-jit-props": "^1.0.4",
     "vite": "^2.7.2"
+  },
+  "dependencies": {
+    "open-props": "^1.1.2"
   }
 }
