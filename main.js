@@ -1,1 +1,10 @@
-import './style.css'
+import "./style.css";
+import "open-props/style";
+// import "open-props/normalize";
+
+const switcher = document.querySelector("#theme-switcher");
+const doc = document.firstElementChild;
+
+switcher.addEventListener("input", (e) => setTheme(e.target.value));
+
+const setTheme = (theme) => doc.setAttribute("color-scheme", theme);
